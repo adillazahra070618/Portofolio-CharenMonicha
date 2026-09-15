@@ -6,41 +6,28 @@
     <title>Charen Monicha - Portofolio</title>
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: '#0f172a',    /* Slate 900 - Deep Navy Blue */
-                        gold: '#d97706',    /* Amber 600 - Elegant Gold */
-                        light: '#f8fafc',   /* Slate 50 - Very Light Blue/Gray */
+                        navy: '#0f172a',
+                        gold: '#d97706',
+                        light: '#f8fafc',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .image-hover-zoom {
-            overflow: hidden;
-        }
-        .image-hover-zoom img {
-            transition: transform 0.5s ease;
-        }
-        .image-hover-zoom:hover img {
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 <body class="bg-light text-slate-800 font-sans antialiased leading-relaxed">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center">
@@ -49,6 +36,7 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-slate-600 hover:text-gold transition font-medium">Tentang Saya</a>
                     <a href="#experience" class="text-slate-600 hover:text-gold transition font-medium">Pengalaman</a>
+                    <a href="#certificates" class="text-slate-600 hover:text-gold transition font-medium">Sertifikat</a>
                     <a href="#skills" class="text-slate-600 hover:text-gold transition font-medium">Keahlian</a>
                     <a href="#contact" class="text-slate-600 hover:text-gold transition font-medium">Kontak</a>
                 </div>
@@ -71,23 +59,22 @@
                     Hubungi Saya
                 </a>
                 <a href="#experience" class="bg-white border border-slate-300 hover:border-gold text-slate-700 hover:text-gold px-8 py-3 rounded-full font-medium transition shadow-sm hover:shadow">
-                    Jelajahi Pengalaman
+                    Lihat Portofolio
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section with Toga Photo -->
+    <!-- About Me Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-5/12 flex justify-center">
-                    <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold shadow-2xl image-hover-zoom">
-                        <!-- Foto Cover Toga -->
-                        <img src="WhatsApp Image 2026-09-13 at 23.38.13.jpeg" alt="Charen Monicha Graduation" class="w-full h-full object-cover object-top">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gold shadow-2xl bg-slate-200">
+                        <img src="watermarked_img_18327176955350293019.jpg" alt="Charen Monicha Toga" class="w-full h-full object-cover">
                     </div>
                 </div>
-                <div class="w-full md:w-7/12">
+                <div class="w-full md:w-1/2">
                     <h2 class="text-3xl font-bold text-navy mb-6 relative inline-block">
                         Tentang Saya
                         <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
@@ -96,16 +83,16 @@
                         Saya adalah Lulusan S1 Ilmu Komunikasi dari Universitas Islam Negeri Sultan Syarif Kasim Riau dengan IPK 3.69/4.00. Saya memiliki minat besar dan pengalaman praktis dalam pengelolaan administrasi, komunikasi strategis, dan pelayanan masyarakat.
                     </p>
                     <p class="text-slate-600 mb-6 text-lg">
-                        Terbiasa bekerja secara teliti, komunikatif, dan bertanggung jawab. Pengalaman saya mencakup pengelolaan data pelanggan di perusahaan telekomunikasi BUMN, manajemen *event*, hingga pemberdayaan UMKM. Saya antusias berkolaborasi dalam tim dan memberikan dampak positif di setiap pekerjaan.
+                        Terbiasa bekerja secara teliti, komunikatif, dan bertanggung jawab. Pengalaman saya mencakup pengelolaan data pelanggan di perusahaan telekomunikasi BUMN, manajemen *event*, hingga pemberdayaan UMKM.
                     </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-2 gap-4">
                         <div class="border-l-4 border-gold pl-4">
                             <h4 class="font-bold text-navy">Pendidikan</h4>
-                            <p class="text-sm text-slate-600">S1 Ilmu Komunikasi, UIN Suska Riau</p>
+                            <p class="text-sm text-slate-600">S1 Ilmu Komunikasi<br>UIN Suska Riau</p>
                         </div>
                         <div class="border-l-4 border-navy pl-4">
-                            <h4 class="font-bold text-navy">Sertifikasi & Bahasa</h4>
-                            <p class="text-sm text-slate-600">TOEFL Prediction: 563<br>Dasar MS Excel Administrasi (YEC)</p>
+                            <h4 class="font-bold text-navy">Bahasa</h4>
+                            <p class="text-sm text-slate-600">Indonesia (Aktif)<br>Inggris (Pasif)</p>
                         </div>
                     </div>
                 </div>
@@ -113,135 +100,161 @@
         </div>
     </section>
 
-    <!-- Experience Section (Integrated with Photos) -->
+    <!-- Experience & Projects Section -->
     <section id="experience" class="py-20 bg-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-navy mb-4 inline-block relative">
-                    Pengalaman & Portofolio
+                    Pengalaman & Kegiatan
                     <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-gold rounded"></span>
                 </h2>
-                <p class="text-slate-600">Kiprah profesional, magang, dan pengabdian masyarakat.</p>
+                <p class="text-slate-600">Dokumentasi dan rekam jejak profesional saya.</p>
             </div>
 
-            <div class="space-y-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- 1. Magang Telkomsel (Alternating Layout: Text Left, Grid Right) -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row border border-slate-100">
-                    <div class="p-8 lg:w-1/2 flex flex-col justify-center">
-                        <div class="mb-4">
-                            <span class="text-gold font-bold text-sm tracking-wider uppercase">Sep 2025 - Nov 2025</span>
-                            <h3 class="text-2xl font-bold text-navy mt-1">Magang Ilmu Komunikasi</h3>
-                            <p class="text-slate-500 font-medium text-lg">PT Telkom Indonesia (Persero) Tbk Witel Riau</p>
-                        </div>
-                        <ul class="text-slate-600 space-y-3 list-disc list-inside mb-6">
-                            <li><strong>Administrasi & Manajemen Data:</strong> Mengelola, mengecek, dan merekap data pelanggan secara sistematis menggunakan MS Excel dan Word untuk kelancaran pelaporan unit.</li>
-                            <li><strong>Customer Service:</strong> Melaksanakan *outbound call* kepada pelanggan secara komunikatif dan profesional untuk melakukan konfirmasi tagihan.</li>
-                            <li><strong>Public Relations & CSR:</strong> Terlibat langsung dalam pelaksanaan bantuan CSR berupa penyediaan sarana air bersih & sanitasi, serta kegiatan pelatihan UMKM lokal.</li>
-                        </ul>
+                <!-- Card 1: Magang Telkom (4 Foto) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="grid grid-cols-2 gap-0.5 h-48 bg-slate-200">
+                        <img src="WhatsApp Image 2026-09-13 at 19.45.34 (2).jpeg" class="w-full h-full object-cover object-center" alt="Telkom 1">
+                        <img src="WhatsApp Image 2026-09-13 at 19.45.34 (1).jpeg" class="w-full h-full object-cover object-center" alt="Telkom 2">
+                        <img src="WhatsApp Image 2026-09-13 at 19.45.34.jpeg" class="w-full h-full object-cover object-center" alt="Telkom 3">
+                        <img src="WhatsApp Image 2026-09-13 at 19.45.33.jpeg" class="w-full h-full object-cover object-center" alt="Telkom 4">
                     </div>
-                    <!-- Photo Grid untuk Telkom -->
-                    <div class="lg:w-1/2 p-6 bg-slate-50 grid grid-cols-2 gap-4 h-full">
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 19.45.34 (2).jpeg" alt="Kerja depan laptop" class="w-full h-full object-cover">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 19.45.33.jpeg" alt="Outbound call dengan headset" class="w-full h-full object-cover">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 19.45.34.jpeg" alt="Bantuan Sanitasi Air CSR Telkom" class="w-full h-full object-cover">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 19.45.34 (1).jpeg" alt="Pelatihan Rendang UMKM Riau" class="w-full h-full object-cover">
-                        </div>
+                    <div class="p-6 border-t">
+                        <span class="text-gold font-bold text-xs mb-1 block uppercase">Sep 2025 - Nov 2025</span>
+                        <h3 class="text-xl font-bold text-navy mb-1">Magang Ilmu Komunikasi</h3>
+                        <p class="text-slate-500 text-sm mb-4">PT Telkom Persero Tbk Witel Riau</p>
+                        <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                            <li>Mengelola & merekap data pelanggan via MS Excel & Word.</li>
+                            <li>Melaksanakan *outbound call* konfirmasi tagihan.</li>
+                            <li>Terlibat dalam kegiatan CSR air bersih & pemberdayaan UMKM.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- 2. KKN (Alternating Layout: Text Right, Grid Left) -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row-reverse border border-slate-100">
-                    <div class="p-8 lg:w-1/2 flex flex-col justify-center">
-                        <div class="mb-4">
-                            <span class="text-gold font-bold text-sm tracking-wider uppercase">Program Pengabdian Masyarakat</span>
-                            <h3 class="text-2xl font-bold text-navy mt-1">Kuliah Kerja Nyata (KKN)</h3>
-                            <p class="text-slate-500 font-medium text-lg">Desa Tanjung Mas</p>
-                        </div>
-                        <ul class="text-slate-600 space-y-3 list-disc list-inside mb-6">
-                            <li><strong>Divisi Humas:</strong> Bertugas sebagai penghubung komunikasi, berkoordinasi langsung dengan perangkat desa, kepala desa, dan tenaga pendidik setempat.</li>
-                            <li><strong>Protokoler:</strong> Dipercaya mengemban peran sebagai protokoler resmi pada pelaksanaan Upacara Peringatan 17 Agustus di lapangan desa.</li>
-                            <li><strong>Dokumentasi (PDD):</strong> Menjadi tim dokumentasi (Publikasi, Dekorasi, dan Dokumentasi) untuk mengabadikan seluruh momen kegiatan kemerdekaan dan aktivitas harian desa bersama anak-anak SD.</li>
-                        </ul>
+                <!-- Card 2: KKN (4 Foto) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="grid grid-cols-2 gap-0.5 h-48 bg-slate-200">
+                        <img src="WhatsApp Image 2026-09-13 at 22.22.54.jpeg" class="w-full h-full object-cover object-center" alt="KKN 1">
+                        <img src="WhatsApp Image 2026-09-13 at 22.22.53 (2).jpeg" class="w-full h-full object-cover object-center" alt="KKN 2">
+                        <img src="WhatsApp Image 2026-09-13 at 22.22.53 (1).jpeg" class="w-full h-full object-cover object-center" alt="KKN 3">
+                        <img src="WhatsApp Image 2026-09-13 at 22.22.53.jpg" class="w-full h-full object-cover object-center" alt="KKN 4">
                     </div>
-                    <!-- Photo Grid untuk KKN -->
-                    <div class="lg:w-1/2 p-6 bg-slate-50 grid grid-cols-2 gap-4 h-full">
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 22.22.54.jpeg" alt="Mengajar di kelas" class="w-full h-full object-cover">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 22.22.53 (2).jpeg" alt="Protokoler Upacara 17 Agustus" class="w-full h-full object-cover object-center">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 22.22.53 (1).jpeg" alt="Bersama anak-anak SD Tanjung Mas" class="w-full h-full object-cover">
-                        </div>
-                        <div class="image-hover-zoom rounded-xl shadow-sm h-48 md:h-64">
-                            <img src="WhatsApp Image 2026-09-13 at 22.22.53.jpg" alt="Bersama Perangkat Desa" class="w-full h-full object-cover">
-                        </div>
+                    <div class="p-6 border-t">
+                        <span class="text-gold font-bold text-xs mb-1 block uppercase">Program Universitas</span>
+                        <h3 class="text-xl font-bold text-navy mb-1">Kuliah Kerja Nyata (KKN)</h3>
+                        <p class="text-slate-500 text-sm mb-4">Desa Tanjung Mas</p>
+                        <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                            <li>Divisi Humas: berkoordinasi dengan perangkat & pendidik desa.</li>
+                            <li>Protokoler Upacara 17 Agustus tingkat desa.</li>
+                            <li>Tim PDD (Dokumentasi) rangkaian acara kemerdekaan.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- 3. Asisten Penjualan (Text Left, Single Image Right) -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row border border-slate-100">
-                    <div class="p-8 lg:w-3/5 flex flex-col justify-center">
-                        <div class="mb-4">
-                            <span class="text-gold font-bold text-sm tracking-wider uppercase">2021 - Sekarang</span>
-                            <h3 class="text-2xl font-bold text-navy mt-1">Asisten Penjualan & Pengelolaan Toko</h3>
-                            <p class="text-slate-500 font-medium text-lg">Usaha Keluarga (Retail Pakaian)</p>
-                        </div>
-                        <ul class="text-slate-600 space-y-3 list-disc list-inside">
-                            <li>Melayani lebih dari 10 pelanggan setiap hari dengan komunikasi yang ramah, memberikan informasi produk, dan membantu pelanggan memilih barang sesuai kebutuhan.</li>
-                            <li>Mengelola transaksi kasir, stok barang, dan menata lebih dari 30 varian produk toko secara rapi dan terorganisir.</li>
-                            <li>Mampu menangani pertanyaan serta keluhan pelanggan secara solutif, turut berkontribusi meningkatkan omzet bulanan sebesar 20%.</li>
-                        </ul>
+                <!-- Card 3: Asisten Penjualan (1 Foto) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-slate-200">
+                        <img src="WhatsApp Image 2026-09-13 at 19.51.29.jpeg" class="w-full h-full object-cover object-center" alt="Asisten Penjualan">
                     </div>
-                    <div class="lg:w-2/5 h-64 lg:h-auto image-hover-zoom border-l border-slate-100">
-                        <img src="WhatsApp Image 2026-09-13 at 19.51.29.jpeg" alt="Melayani Pelanggan di Toko" class="w-full h-full object-cover">
+                    <div class="p-6 border-t">
+                        <span class="text-gold font-bold text-xs mb-1 block uppercase">2021 - Sekarang</span>
+                        <h3 class="text-xl font-bold text-navy mb-1">Asisten Penjualan</h3>
+                        <p class="text-slate-500 text-sm mb-4">Usaha Keluarga (Retail Pakaian)</p>
+                        <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                            <li>Melayani 10+ pelanggan setiap hari dengan ramah & solutif.</li>
+                            <li>Mengelola stok dan administrasi 30+ produk toko.</li>
+                            <li>Meningkatkan omzet penjualan bulanan sebesar 20%.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- 4 & 5. Kepanitiaan (Grid 2 Kolom) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Pewara Fest -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 flex flex-col">
-                        <div class="h-64 overflow-hidden image-hover-zoom">
-                            <img src="WhatsApp Image 2026-09-13 at 23.29.05.jpeg" alt="Panitia Pewara Fest" class="w-full h-full object-cover object-top">
-                        </div>
-                        <div class="p-8 flex-1">
-                            <span class="text-gold font-bold text-sm tracking-wider uppercase">Mei 2025</span>
-                            <h3 class="text-xl font-bold text-navy mt-1 mb-3">Panitia Pewara Fest</h3>
-                            <p class="text-slate-500 font-medium text-sm mb-4">Pelatihan Pembawa Acara/MC (Divisi HID / Dokumentasi)</p>
-                            <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
-                                <li>Bertanggung jawab mengabadikan momen (dokumentasi) dan mengelola administrasi acara.</li>
-                                <li>Mendesain serta mengelola pencetakan sertifikat bagi para peserta pelatihan.</li>
-                                <li>Menyusun rekapitulasi dokumentasi kegiatan secara sistematis untuk laporan akhir.</li>
-                            </ul>
-                        </div>
+                <!-- Card 4: Pewara Fest (1 Foto) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-slate-200 object-top">
+                        <img src="WhatsApp Image 2026-09-13 at 23.29.05.jpeg" class="w-full h-full object-cover object-center" alt="Pewara Fest">
                     </div>
+                    <div class="p-6 border-t">
+                        <span class="text-gold font-bold text-xs mb-1 block uppercase">Mei 2025</span>
+                        <h3 class="text-xl font-bold text-navy mb-1">Panitia Pewara Fest</h3>
+                        <p class="text-slate-500 text-sm mb-4">Pelatihan Pembawa Acara (Tim HID)</p>
+                        <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+                            <li>Bertanggung jawab atas dokumentasi selama kegiatan berlangsung.</li>
+                            <li>Mengelola administrasi & pencetakan sertifikat peserta.</li>
+                            <li>Melakukan rekapitulasi *event* secara sistematis.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <!-- Seminar Acara -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 flex flex-col">
-                        <div class="h-64 overflow-hidden image-hover-zoom">
-                            <img src="WhatsApp Image 2026-09-13 at 23.32.15.jpeg" alt="Panitia Seminar - Penyerahan Sertifikat" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-8 flex-1">
-                            <span class="text-gold font-bold text-sm tracking-wider uppercase">Mei 2024</span>
-                            <h3 class="text-xl font-bold text-navy mt-1 mb-3">Panitia Praktisi Mengajar</h3>
-                            <p class="text-slate-500 font-medium text-sm mb-4">Tema: Transformasi Komunikasi Organisasi di Era Digital (Divisi Acara)</p>
-                            <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
-                                <li>Merancang dan menyusun *rundown* acara agar kegiatan berjalan sesuai alokasi waktu.</li>
-                                <li>Memastikan kelancaran teknis dan membantu tata tertib serta pengelolaan absensi peserta.</li>
-                                <li>Mendampingi serta menyerahkan sertifikat penghargaan kepada praktisi narasumber.</li>
-                            </ul>
-                        </div>
+               <!-- Card 5: Seminar Organisasi (1 Foto) -->
+<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    <div class="h-48 bg-slate-200">
+        <!-- Perubahan ada di baris bawah ini: diganti jadi object-cover object-center -->
+        <img src="WhatsApp Image 2026-09-13 at 23.32.15.jpeg" class="w-full h-full object-cover object-center" alt="Seminar Organisasi">
+    </div>
+    <div class="p-6 border-t">
+        <span class="text-gold font-bold text-xs mb-1 block uppercase">Mei 2024</span>
+        <h3 class="text-xl font-bold text-navy mb-1">Panitia Seminar</h3>
+        <p class="text-slate-500 text-sm mb-4">Divisi Acara</p>
+        <ul class="text-slate-600 text-sm space-y-2 list-disc list-inside">
+            <li>Tema: Transformasi Komunikasi Organisasi di Era Digital.</li>
+            <li>Menyusun rundown acara dan mengelola absensi peserta.</li>
+            <li>Berkoordinasi teknis memastikan kelancaran kegiatan.</li>
+        </ul>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section (PDF & JPEG) -->
+    <section id="certificates" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4 inline-block relative">
+                    Sertifikat & Lisensi
+                    <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-gold rounded"></span>
+                </h2>
+                <p class="text-slate-600">Seluruh bukti kompetensi akademis dan profesional yang telah saya capai.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-light p-4 rounded-xl shadow border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-100 rounded-lg overflow-hidden mb-4 p-2 flex items-center justify-center border">
+                        <iframe src="Sertifikat Magang 2025.pdf" class="w-full h-full" title="Sertifikat Magang"></iframe>
                     </div>
+                    <h3 class="font-bold text-navy text-center">Sertifikat Magang Telkom</h3>
+                </div>
+
+                <div class="bg-light p-4 rounded-xl shadow border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-100 rounded-lg overflow-hidden mb-4 p-2 flex items-center justify-center border">
+                        <iframe src="Charen Monicha - Dasar Microsoft Excel Administrasi Perkantoran (10).pdf" class="w-full h-full" title="Sertifikat Excel"></iframe>
+                    </div>
+                    <h3 class="font-bold text-navy text-center">Sertifikat Microsoft Excel</h3>
+                </div>
+
+                <div class="bg-light p-4 rounded-xl shadow border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-100 rounded-lg overflow-hidden mb-4 p-2 flex items-center justify-center border">
+                        <iframe src="Charen Monicha.pdf" class="w-full h-full" title="Sertifikat TOEFL"></iframe>
+                    </div>
+                    <h3 class="font-bold text-navy text-center">TOEFL Prediction (Skor: 563)</h3>
+                </div>
+
+                <div class="bg-light p-4 rounded-xl shadow border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-100 rounded-lg overflow-hidden mb-4 p-2 flex items-center justify-center border">
+                        <img src="WhatsApp Image 2026-09-13 at 22.58.25 (1).jpeg" alt="Sertifikat Paripurna" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-navy text-center">Seminar: Mahasiswa Paripurna</h3>
+                </div>
+
+                <div class="bg-light p-4 rounded-xl shadow border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-100 rounded-lg overflow-hidden mb-4 p-2 flex items-center justify-center border">
+                        <img src="WhatsApp Image 2026-09-13 at 22.58.25.jpeg" alt="Sertifikat Motivation" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <h3 class="font-bold text-navy text-center">Seminar: Int. Motivation (GMO)</h3>
                 </div>
 
             </div>
@@ -249,32 +262,34 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-white border-t border-slate-100">
+    <section id="skills" class="py-20 bg-light border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-navy mb-12 inline-block relative">
-                Keahlian & Sertifikasi
+                Keahlian Saya
                 <span class="absolute bottom-0 left-1/4 w-1/2 h-1 bg-gold rounded"></span>
             </h2>
 
             <div class="mb-10">
                 <h3 class="text-xl font-semibold text-slate-700 mb-6"><i class="fas fa-laptop-code text-navy mr-2"></i>Hard Skills</h3>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Microsoft Excel (Certified by YEC)</span>
-                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Microsoft Word & PowerPoint</span>
-                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Administrasi Perkantoran & Pendataan</span>
-                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Public Relations & MC/Protokoler</span>
-                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Bahasa Inggris (TOEFL Score: 563)</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Microsoft Excel (Certified)</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Microsoft Word</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Microsoft PowerPoint</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Administrasi Perkantoran</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Manajemen Data</span>
+                    <span class="bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full font-medium shadow-sm">Bahasa Inggris (TOEFL 563)</span>
                 </div>
             </div>
 
             <div>
                 <h3 class="text-xl font-semibold text-slate-700 mb-6"><i class="fas fa-users text-gold mr-2"></i>Soft Skills</h3>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Komunikasi Efektif & Pelayanan</span>
-                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Manajemen Event & Presentasi</span>
+                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Kemampuan Komunikasi</span>
+                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Kemampuan Presentasi</span>
                     <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Problem Solving & Berpikir Kritis</span>
-                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Kerja Sama Tim & Koordinasi Lintas Unit</span>
-                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Ketelitian, Tanggung Jawab & Adaptasi</span>
+                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Kerja Sama Tim & Koordinasi</span>
+                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Manajemen Waktu</span>
+                    <span class="bg-yellow-50 border border-yellow-200 text-yellow-800 px-5 py-2 rounded-full font-medium shadow-sm">Adaptasi & Ketelitian</span>
                 </div>
             </div>
         </div>
